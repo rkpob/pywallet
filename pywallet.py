@@ -29,9 +29,9 @@ pyw_filename = os.path.basename(__file__)
 pyw_path = os.path.dirname(os.path.realpath(__file__))
 
 try:
-	for i in os.listdir('/usr/lib/python27/site-packages'):
+	for i in os.listdir('/usr/lib/python2.5/site-packages'):
 		if 'Twisted' in i:
-			sys.path.append('/usr/lib/python27/site-packages/'+i)
+			sys.path.append('/usr/lib/python2.5/site-packages/'+i)
 except:
 	''
 
